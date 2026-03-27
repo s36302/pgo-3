@@ -6,7 +6,7 @@ public class Main {
 
         CafeCustomer customer = new CafeCustomer(100, "Julia", "Mazur", "j.mazur@mail.pl");
 
-       /* Order order = new Order(customer);
+        Order order = new Order(customer);
         order.addItem(m1);
         order.addItem(m2);
         order.addItem(m3);
@@ -19,11 +19,11 @@ public class Main {
 
         MenuItem espressoCopy = new MenuItem("C-01", "Espresso duplicate", 9.0, "coffee");
         System.out.println("Are the products equal? " + m1.equals(espressoCopy));
-
+        System.out.println("Next order number will be " + order.getNextOrderNumber());
         order.markAsPaid();
         System.out.println(order);
 
-         */
+
     }
 }
 

@@ -6,11 +6,11 @@ public class CafeCustomer {
     private String lastName;
     private String email;
 
-    public CafeCustomer(String email, String lastName, String firstName, int customerId) {
-        this.email = email;
-        this.lastName = lastName;
-        this.firstName = firstName;
+    public CafeCustomer(int customerId,String firstName, String lastName, String email) {
         this.customerId = customerId;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.email = email;
     }
 
     public int getCustomerId() {
@@ -39,11 +39,13 @@ public class CafeCustomer {
     @Override
     public String toString() {
         return "CafeCustomer{" +
-                "firstName='" + firstName + '\'' +
+                "customerId=" + customerId +
+                ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
                 ", email='" + email + '\'' +
                 '}';
     }
+
 
     @Override
     public boolean equals(Object o) {
