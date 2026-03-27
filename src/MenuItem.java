@@ -33,10 +33,10 @@ public class MenuItem {
     }
     @Override
     public boolean equals(Object obj) {
-        if (this == obj) return true;                  // same reference → definitely equal
-        if (!(obj instanceof MenuItem)) return false;  // wrong type → not equal
-        MenuItem other = (MenuItem) obj;               // safe cast
-        return this.code.equals(other.code);           // compare by code only
+        if (this == obj) return true;
+        if (!(obj instanceof MenuItem)) return false;
+        MenuItem other = (MenuItem) obj;
+        return this.code.equals(other.code);
     }
 }
 
